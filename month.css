@@ -1,0 +1,113 @@
+/* ---------- ALAP ---------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: #d4a017;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.nav-link {
+  color: #ccc;
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f1c40f !important;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  height: 350px;
+  background-image: url('https://images.unsplash.com/photo-1599058917210-6348d69a60e4?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #f1c40f;
+}
+
+.hero-content h1 { font-size: 2.8rem; margin-bottom: 10px; }
+.hero-content p { font-size: 1.2rem; color: #e0e0e0; }
+
+/* ---------- MONTH CARDS ---------- */
+.month-card .card {
+  background: rgba(30,30,30,0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(212,160,23,0.2);
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.4s, background 0.3s;
+}
+
+.month-card .card-body h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.month-card .card-body p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.month-card:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(212,160,23,0.2);
+  border-color: rgba(212,160,23,0.4);
+  background: linear-gradient(135deg, #d4a017, #f1c40f);
+  color: #121212;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ---------- RESZPONZÍV ---------- */
+@media(max-width:992px){
+  .hero-content h1 { font-size: 2.3rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
+@media(max-width:576px){
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 0.9rem; }
+}

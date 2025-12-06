@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Célok</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="goals.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Edzésterv</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html">Naptár</a></li>
+          <li class="nav-item"><a class="nav-link active" href="goals.html">Célok</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center">
+      <h1>Céljaim</h1>
+      <p>Maradj motivált és kövesd a fejlődésed!</p>
+    </div>
+  </header>
+
+  <!-- CÉLOK -->
+  <section class="container py-5" id="goals-section">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="goal-card">
+          <div class="card-header bg-goal-short">
+            <i class="bi bi-lightning-charge-fill"></i> Rövid távú cél
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Heti 4 edzés betartása</li>
+              <li>5 km futás teljesítése</li>
+            </ul>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-6">
+        <div class="goal-card">
+          <div class="card-header bg-goal-long">
+            <i class="bi bi-bar-chart-line-fill"></i> Hosszú távú cél
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Izomtömeg növelés</li>
+              <li>10 km futás 6 hónapon belül</li>
+            </ul>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Az Én Edzéstervem
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.progress-bar').forEach(bar => {
+      const val = bar.getAttribute('aria-valuenow');
+      setTimeout(()=>{ bar.style.width = val + '%'; }, 300);
+    });
+  });
+  </script>
+
+</body>
+</html>

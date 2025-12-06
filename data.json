@@ -1,0 +1,34 @@
+{
+  "december": {
+    "1": {"exercises":["Fekvenyomás 3x10","Húzódzkodás 3x8","Plank 3x1 perc"],"progress":60,"difficulty":"közepes","type":"erő"},
+    "2": {"exercises":["Guggolás 3x12","Kitörés 3x10","Hasprés 3x15"],"progress":40,"difficulty":"közepes","type":"erő"},
+    "3": {"exercises":["Pihenő / Kardió 30 perc"],"progress":100,"difficulty":"könnyű","type":"kardió"},
+    "4": {"exercises":["Fekvőtámasz 3x20","Húzódzkodás 3x6"],"progress":50,"difficulty":"közepes","type":"erő"},
+    "5": {"exercises":["Futás 5km"],"progress":70,"difficulty":"közepes","type":"kardió"},
+    "6": {"exercises":["Súlyzós edzés 3x12"],"progress":80,"difficulty":"nehéz","type":"erő"},
+    "7": {"exercises":["Nyújtás és pihenés"],"progress":30,"difficulty":"könnyű","type":"mobilitás"},
+    "8": {"exercises":["HIIT 20 perc"],"progress":50,"difficulty":"nehéz","type":"kardió"},
+    "9": {"exercises":["Súlyzós edzés + hasizom 3x15"],"progress":60,"difficulty":"közepes","type":"erő"}
+  },
+  "januar": {
+    "1": {"exercises":["Futás 5km","Felülések 3x20"],"progress":50,"difficulty":"közepes","type":"kardió"},
+    "2": {"exercises":["Húzódzkodás 4x8","Fekvőtámasz 3x15"],"progress":70,"difficulty":"nehéz","type":"erő"},
+    "3": {"exercises":["Guggolás 3x12","Plank 3x1 perc"],"progress":60,"difficulty":"közepes","type":"erő"},
+    "4": {"exercises":["Súlyzós edzés 3x10"],"progress":40,"difficulty":"közepes","type":"erő"},
+    "5": {"exercises":["Pihenő / Jóga"],"progress":100,"difficulty":"könnyű","type":"mobilitás"},
+    "6": {"exercises":["Futás 7km"],"progress":80,"difficulty":"nehéz","type":"kardió"},
+    "7": {"exercises":["Húzódzkodás 5x6","Hasprés 3x20"],"progress":60,"difficulty":"közepes","type":"erő"},
+    "8": {"exercises":["Kerékpározás 10km"],"progress":70,"difficulty":"közepes","type":"kardió"}
+  },
+  "februar": {
+    "1": {"exercises":["Fekvenyomás 4x8","Plank 3x1 perc"],"progress":55,"difficulty":"közepes","type":"erő"},
+    "2": {"exercises":["Guggolás 3x12","Kitörés 3x10"],"progress":60,"difficulty":"közepes","type":"erő"},
+    "3": {"exercises":["Futás 6km"],"progress":70,"difficulty":"nehéz","type":"kardió"},
+    "4": {"exercises":["Súlyzós edzés 3x12"],"progress":65,"difficulty":"nehéz","type":"erő"},
+    "5": {"exercises":["Pihenő / Jóga"],"progress":100,"difficulty":"könnyű","type":"mobilitás"},
+    "6": {"exercises":["Fekvőtámasz 4x15","Húzódzkodás 3x8"],"progress":50,"difficulty":"közepes","type":"erő"},
+    "7": {"exercises":["Plank 3x2 perc","Hasprés 3x20"],"progress":70,"difficulty":"közepes","type":"erő"},
+    "8": {"exercises":["HIIT 25 perc"],"progress":60,"difficulty":"nehéz","type":"kardió"},
+    "9": {"exercises":["Nyújtás és mobilitás"],"progress":40,"difficulty":"könnyű","type":"mobilitás"}
+  }
+}

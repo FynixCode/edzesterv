@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heti Edzésterv</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="week.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Edzésterv</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html">Naptár</a></li>
+          <li class="nav-item"><a class="nav-link" href="goals.html">Célok</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Heti Edzés Terv</h1>
+      <p>Fókusz, rendszer, fejlődés.</p>
+      <a href="#week" class="btn-hero">Mutasd a hetet</a>
+    </div>
+  </header>
+
+  <!-- HÉT NAPJAI -->
+  <main id="week" class="week-container">
+
+    <div class="day-card">
+      <h2 class="day-header">Hétfő ⚡</h2>
+      <ul class="exercises">
+        <li>Mell</li>
+        <li>Váll</li>
+        <li>Tricepsz</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:60%">60%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Kedd 🏋️</h2>
+      <ul class="exercises">
+        <li>Hát</li>
+        <li>Bicepsz</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:40%">40%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Szerda 🔥</h2>
+      <ul class="exercises">
+        <li>Láb</li>
+        <li>Farizom</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:20%">20%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Csütörtök 💪</h2>
+      <ul class="exercises">
+        <li>Core</li>
+        <li>Kardió</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:50%">50%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Péntek ⭐</h2>
+      <ul class="exercises">
+        <li>Teljes test</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:70%">70%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Szombat 🌀</h2>
+      <ul class="exercises">
+        <li>Mobilitás</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:30%">30%</div></div>
+    </div>
+
+    <div class="day-card">
+      <h2 class="day-header">Vasárnap ☕</h2>
+      <ul class="exercises">
+        <li>Pihenés</li>
+      </ul>
+      <div class="progress"><div class="progress-bar" style="width:100%">100%</div></div>
+    </div>
+
+  </main>
+
+  <footer>
+    2025 © Weekly Goals
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

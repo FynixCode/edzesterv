@@ -1,0 +1,159 @@
+/* ---------- ALAPOK ---------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: #111;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #d4a017;
+}
+
+.nav-link {
+  color: #ccc;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f1c40f;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  height: 450px;
+  background-image: url('./header_kep.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #f1c40f;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.btn-hero {
+  padding: 12px 30px;
+  background: linear-gradient(135deg,#d4a017,#f1c40f);
+  color: #121212;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+/* ---------- WEEK LAYOUT ---------- */
+.week-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- DAY CARDS ---------- */
+.day-card {
+  background: rgba(30,30,30,0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(212,160,23,0.15);
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.day-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212,160,23,0.4);
+  box-shadow: 0 10px 35px rgba(212,160,23,0.2);
+}
+
+/* ---------- DAY HEADER ---------- */
+.day-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f1c40f;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 6px rgba(212,160,23,0.4);
+}
+.day-header::after {
+  content: "";
+  display: block;
+  margin: 8px auto 0;
+  width: 40%;
+  height: 3px;
+  background: linear-gradient(90deg,#d4a017,#f1c40f);
+  border-radius: 20px;
+}
+
+/* ---------- EXERCISES ---------- */
+.exercises li {
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.exercises li:hover {
+  background: rgba(212,160,23,0.3);
+}
+
+/* ---------- PROGRESS BAR ---------- */
+.progress {
+  height: 15px;
+  border-radius: 10px;
+  background: #2c2c2c;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg,#d4a017,#f1c40f);
+  color: #121212;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(212,160,23,0.5);
+  transition: width 0.8s ease-in-out;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  margin-top: 40px;
+}

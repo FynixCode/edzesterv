@@ -1,0 +1,150 @@
+/* ---------- ALAP ---------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  color: #d4a017;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.nav-link {
+  color: #ccc;
+  margin-left: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f1c40f !important;
+  transform: scale(1.1);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  height: 350px;
+  background-image: url('https://images.unsplash.com/photo-1599058917210-6348d69a60e4?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute; top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #f1c40f;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-content h1 { font-size: 2.8rem; margin-bottom: 10px; }
+.hero-content p { font-size: 1.2rem; color: #e0e0e0; }
+
+/* ---------- GOAL CARD ---------- */
+.goal-card {
+  background: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.4s;
+}
+
+.goal-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.goal-card .card-header {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  color: #121212;
+}
+
+.bg-goal-short {
+  background: linear-gradient(135deg, #d4a017, #f1c40f);
+}
+
+.bg-goal-long {
+  background: linear-gradient(135deg, #f1c40f, #d4a017);
+}
+
+.goal-card .card-body {
+  padding: 20px;
+}
+
+.goal-card ul {
+  padding-left: 1rem;
+  margin-bottom: 15px;
+}
+
+.goal-card li {
+  margin-bottom: 8px;
+}
+
+/* ---------- PROGRESS BAR ---------- */
+.progress {
+  height: 18px;
+  border-radius: 10px;
+  background: #2c2c2c;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #d4a017;
+  color: #121212;
+  font-weight: 600;
+  text-align: center;
+  transition: width 1s ease-in-out;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ---------- ANIMÁCIÓ ---------- */
+@keyframes fadeInUp {
+  0% { opacity:0; transform: translateY(30px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+
+/* ---------- RESZPONZÍV ---------- */
+@media(max-width:992px){
+  .hero-content h1 { font-size: 2.3rem; }
+  .hero-content p { font-size: 1rem; }
+}
+
+@media(max-width:576px){
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 0.9rem; }
+}
