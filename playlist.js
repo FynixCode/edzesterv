@@ -1,12 +1,14 @@
 // Spotify OAuth bejelentkezés URL
-const clientId = '19c9091ee5eb4b2ca39515977eded61d';
-const redirectUri = 'http://127.0.0.1:5500/edzesterv/index.html';
+const clientId = '0fb635d418324a0989be053002dbca55'; // A te Client ID-d
+const redirectUri = 'https://fynixcode.github.io/edzesterv/playlist.html';
 const scopes = 'playlist-read-private';
+
+const loginBtn = document.getElementById('loginBtn');
 
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 loginBtn.addEventListener('click', () => {
-  const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}`;
+  const authUrl = `${authEndpoint}?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent(scopes)}`;
   window.location = authUrl;
 });
 
@@ -31,10 +33,15 @@ function fetchPlaylists(token) {
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('playlistContainer');
+    container.innerHTML = ''; // törlés
     data.items.forEach(pl => {
       const div = document.createElement('div');
-      div.className = 'playlist-card';
-      div.innerHTML = `<img src="${pl.images[0]?.url || ''}" alt="${pl.name}"><h5>${pl.name}</h5><p>${pl.tracks.total} track</p>`;
+      div.className = 'playlist-card col-12 col-sm-6 col-md-4 col-lg-3';
+      div.innerHTML = `
+        <img src="${pl.images[0]?.url || ''}" alt="${pl.name}">
+        <h5>${pl.name}</h5>
+        <p>${pl.tracks.total} track</p>
+      `;
       div.addEventListener('click', () => showTracks(pl, token));
       container.appendChild(div);
     });
@@ -47,10 +54,18 @@ function showTracks(playlist, token) {
   })
   .then(res => res.json())
   .then(data => {
-    const modalIframe = document.getElementById('trackPreview');
-    // az első track preview lejátszása
     const preview = data.items[0]?.track?.preview_url;
-    if (preview) modalIframe.src = preview;
-    new bootstrap.Modal(document.getElementById('trackModal')).show();
+    if (preview) {
+      const audio = document.getElementById('trackPreviewAudio');
+      audio.src = preview;
+      audio.play();
+      new bootstrap.Modal(document.getElementById('trackModal')).show();
+    } else {
+      alert("Ehhez a számhoz nincs preview!");
+    }
   });
 }
+
+
+
+

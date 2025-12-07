@@ -39,7 +39,7 @@
 
 <section class="container py-5">
   <h2 class="text-center mb-4">Saját Playlistek</h2>
-  <div id="playlistContainer" class="row g-4">
+  <div id="playlistContainer" class="row g-4 justify-content-center">
     <!-- Playlistek ide jönnek JS-ből -->
   </div>
 </section>
@@ -48,8 +48,8 @@
 <div class="modal fade" id="trackModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content bg-dark">
-      <div class="modal-body p-0">
-        <iframe id="trackPreview" width="100%" height="450" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      <div class="modal-body p-3">
+        <audio id="trackPreviewAudio" controls autoplay style="width:100%;"></audio>
       </div>
     </div>
   </div>
@@ -63,3 +63,4 @@
 <script src="playlist.js"></script>
 </body>
 </html>
+
