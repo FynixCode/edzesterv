@@ -1,94 +1,38 @@
-/* ---------- ALAPOK ---------- */
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #121212;
-  color: #e0e0e0;
-  margin: 0; padding:0;
-}
+body { font-family:'Roboto',sans-serif; background:#121212; color:#e0e0e0; margin:0; padding:0; }
+a { text-decoration:none; color:inherit; }
 
-a { color: inherit; text-decoration: none; }
+.navbar { background:#111; padding:1rem 0; position:sticky; top:0; z-index:100; }
+.navbar-brand { font-size:1.7rem; font-weight:700; color:#d4a017; }
+.nav-link { color:#ccc; font-weight:500; margin-left:1rem; transition:0.3s; }
+.nav-link:hover, .nav-link.active { color:#f1c40f; transform:scale(1.1); }
 
-/* ---------- NAVBAR ---------- */
-.navbar {
-  background: #111;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  transition: background 0.3s, padding 0.3s;
-}
+.hero { position:relative; height:300px; background-image:url('https://images.unsplash.com/photo-1599058917210-6348d69a60e4?auto=format&fit=crop&w=1950&q=80'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+.hero-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.6); }
+.hero-content { position:relative; text-align:center; }
+.hero-content h1 { font-size:2.8rem; color:#f1c40f; margin-bottom:10px; }
+.hero-content p { font-size:1.2rem; color:#e0e0e0; }
 
-.navbar-brand {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #d4a017;
-}
-
-.nav-link {
-  color: #ccc;
-  font-weight: 500;
-  margin-left: 1rem;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #f1c40f;
-  transform: scale(1.1);
-}
-
-/* ---------- HERO ---------- */
-.hero {
-  position: relative;
-  height: 300px;
-  background-image: url('https://images.unsplash.com/photo-1599058917210-6348d69a60e4?auto=format&fit=crop&w=1950&q=80');
-  background-size: cover;
-  background-position: center;
+/* ---------- CALENDAR GRID ---------- */
+.calendar-grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  position: absolute; top:0; left:0; width:100%; height:100%;
-  background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-  position: relative;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  color: #f1c40f;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-}
-
-/* ---------- HÉT GRID ---------- */
-.week-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 nap egy sorban */
-  gap: 15px;
+  flex-direction: column;  /* minden nap külön sorban */
+  gap: 20px;
 }
 
 /* ---------- NAPI BLOKK ---------- */
-.day-block {
-  background: #1e1e1e;
-  padding: 15px;
+.day-card {
+  background: rgba(30,30,30,0.5);
   border-radius: 12px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;      /* teljes szélesség */
+  max-width: 900px; /* opcionális, hogy ne legyen túl széles nagy képernyőn */
+  margin: 0 auto;   /* középre igazítás */
 }
 
-.day-block:hover {
+.day-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(212,160,23,0.5);
 }
@@ -96,38 +40,31 @@ a { color: inherit; text-decoration: none; }
 .day-header {
   font-weight: 700;
   color: #d4a017;
-  font-size: 1.1rem;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
 }
 
-.exercises {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 10px 0;
-}
-
-/* ---------- EDZÉS SOROK ---------- */
 .exercise-item {
-  padding: 5px 0;
-  border-radius: 6px;
   background: rgba(255,255,255,0.05);
-  margin-bottom: 4px;
-  transition: background 0.3s;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
   text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .exercise-item:hover {
   background: rgba(212,160,23,0.2);
 }
 
-
-/* ---------- PROGRESS BAR ---------- */
 .progress {
-  height: 12px;
+  height: 14px;
   border-radius: 10px;
   background: #333;
   overflow: hidden;
+  margin-top: 15px;
 }
 
 .progress-bar {
@@ -139,7 +76,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-/* ---------- FOOTER ---------- */
+/* Footer */
 footer {
   background: #1a1a1a;
   color: #ccc;
@@ -147,8 +84,10 @@ footer {
   padding: 15px;
 }
 
-/* ---------- RESZPONZÍV ---------- */
-@media(max-width:1200px){ .week-grid { grid-template-columns: repeat(4,1fr); } }
-@media(max-width:992px){ .week-grid { grid-template-columns: repeat(3,1fr); } }
-@media(max-width:768px){ .week-grid { grid-template-columns: repeat(2,1fr); } }
-@media(max-width:576px){ .week-grid { grid-template-columns: 1fr; } }
+
+/* Responsive */
+@media(max-width:1200px){ .calendar-grid{ grid-template-columns: repeat(4,1fr); } }
+@media(max-width:992px){ .calendar-grid{ grid-template-columns: repeat(3,1fr); } }
+@media(max-width:768px){ .calendar-grid{ grid-template-columns: repeat(2,1fr); } }
+@media(max-width:576px){ .calendar-grid{ grid-template-columns: 1fr; } }
+

@@ -1,34 +1,127 @@
 {
-  "december": {
-    "1": {"exercises":["Fekvenyomás 3x10","Húzódzkodás 3x8","Plank 3x1 perc"],"progress":60,"difficulty":"közepes","type":"erő"},
-    "2": {"exercises":["Guggolás 3x12","Kitörés 3x10","Hasprés 3x15"],"progress":40,"difficulty":"közepes","type":"erő"},
-    "3": {"exercises":["Pihenő / Kardió 30 perc"],"progress":100,"difficulty":"könnyű","type":"kardió"},
-    "4": {"exercises":["Fekvőtámasz 3x20","Húzódzkodás 3x6"],"progress":50,"difficulty":"közepes","type":"erő"},
-    "5": {"exercises":["Futás 5km"],"progress":70,"difficulty":"közepes","type":"kardió"},
-    "6": {"exercises":["Súlyzós edzés 3x12"],"progress":80,"difficulty":"nehéz","type":"erő"},
-    "7": {"exercises":["Nyújtás és pihenés"],"progress":30,"difficulty":"könnyű","type":"mobilitás"},
-    "8": {"exercises":["HIIT 20 perc"],"progress":50,"difficulty":"nehéz","type":"kardió"},
-    "9": {"exercises":["Súlyzós edzés + hasizom 3x15"],"progress":60,"difficulty":"közepes","type":"erő"}
-  },
-  "januar": {
-    "1": {"exercises":["Futás 5km","Felülések 3x20"],"progress":50,"difficulty":"közepes","type":"kardió"},
-    "2": {"exercises":["Húzódzkodás 4x8","Fekvőtámasz 3x15"],"progress":70,"difficulty":"nehéz","type":"erő"},
-    "3": {"exercises":["Guggolás 3x12","Plank 3x1 perc"],"progress":60,"difficulty":"közepes","type":"erő"},
-    "4": {"exercises":["Súlyzós edzés 3x10"],"progress":40,"difficulty":"közepes","type":"erő"},
-    "5": {"exercises":["Pihenő / Jóga"],"progress":100,"difficulty":"könnyű","type":"mobilitás"},
-    "6": {"exercises":["Futás 7km"],"progress":80,"difficulty":"nehéz","type":"kardió"},
-    "7": {"exercises":["Húzódzkodás 5x6","Hasprés 3x20"],"progress":60,"difficulty":"közepes","type":"erő"},
-    "8": {"exercises":["Kerékpározás 10km"],"progress":70,"difficulty":"közepes","type":"kardió"}
-  },
-  "februar": {
-    "1": {"exercises":["Fekvenyomás 4x8","Plank 3x1 perc"],"progress":55,"difficulty":"közepes","type":"erő"},
-    "2": {"exercises":["Guggolás 3x12","Kitörés 3x10"],"progress":60,"difficulty":"közepes","type":"erő"},
-    "3": {"exercises":["Futás 6km"],"progress":70,"difficulty":"nehéz","type":"kardió"},
-    "4": {"exercises":["Súlyzós edzés 3x12"],"progress":65,"difficulty":"nehéz","type":"erő"},
-    "5": {"exercises":["Pihenő / Jóga"],"progress":100,"difficulty":"könnyű","type":"mobilitás"},
-    "6": {"exercises":["Fekvőtámasz 4x15","Húzódzkodás 3x8"],"progress":50,"difficulty":"közepes","type":"erő"},
-    "7": {"exercises":["Plank 3x2 perc","Hasprés 3x20"],"progress":70,"difficulty":"közepes","type":"erő"},
-    "8": {"exercises":["HIIT 25 perc"],"progress":60,"difficulty":"nehéz","type":"kardió"},
-    "9": {"exercises":["Nyújtás és mobilitás"],"progress":40,"difficulty":"könnyű","type":"mobilitás"}
+  "month": {
+    "december": {
+      "week1": {
+        "1": {
+          "title": "Hétfő – Upper Body / Funkcionális erő",
+          "goal": "erős felsőtest, stabil vállak, labdaütközésekhez felkészülés",
+          "warmup": [
+            {"name":"Mobilitás: váll, csípő, gerinc – 5 perc","video":"https://www.youtube.com/embed/VIDEO1"},
+            {"name":"Evezőgép vagy könnyű cardio – 5 perc","video":"https://www.youtube.com/embed/VIDEO2"}
+          ],
+          "strength": [
+            {"name":"Bench Press: 3×5–6","video":"https://www.youtube.com/embed/VIDEO3"},
+            {"name":"Barbell Rows: 3×6","video":"https://www.youtube.com/embed/VIDEO4"},
+            {"name":"Shoulder Press: 3×6–8","video":"https://www.youtube.com/embed/VIDEO5"},
+            {"name":"Pull-ups / Assisted Pull-ups: 3×max","video":"https://www.youtube.com/embed/VIDEO6"}
+          ],
+          "assistance": [
+            {"name":"Bicep Curls 2×12","video":"https://www.youtube.com/embed/VIDEO7"},
+            {"name":"Tricep Extensions 2×12","video":"https://www.youtube.com/embed/VIDEO8"}
+          ],
+          "core": [
+            {"name":"Pallof Press: 3×12/oldal","video":"https://www.youtube.com/embed/VIDEO9"},
+            {"name":"Plank: 3×1 perc","video":"https://www.youtube.com/embed/VIDEO10"},
+            {"name":"Dead Bug: 3×12","video":"https://www.youtube.com/embed/VIDEO11"}
+          ],
+          "cooldown": [
+            {"name":"Könnyű nyújtás 5 perc","video":"https://www.youtube.com/embed/VIDEO12"}
+          ]
+        },
+        "2": {
+          "title": "Kedd – Lower Body / Power",
+          "goal": "robbanékony lábak, labdás gyorsulás",
+          "warmup": [
+            {"name":"Dinamikus nyújtás, guggolás-minta","video":"https://www.youtube.com/embed/VIDEO13"},
+            {"name":"Agility létra / gyors lábmunka a padon: 10 perc","video":"https://www.youtube.com/embed/VIDEO14"}
+          ],
+          "strength": [
+            {"name":"Barbell Back Squat: 3×5–6","video":"https://www.youtube.com/embed/VIDEO15"},
+            {"name":"Romanian Deadlift: 3×6","video":"https://www.youtube.com/embed/VIDEO16"},
+            {"name":"Walking Lunges: 3×8/ láb","video":"https://www.youtube.com/embed/VIDEO17"}
+          ],
+          "plyo": [
+            {"name":"Jump Squats: 3×8","video":"https://www.youtube.com/embed/VIDEO18"},
+            {"name":"Step-ups / Bench Jump-ups: 3×10","video":"https://www.youtube.com/embed/VIDEO19"},
+            {"name":"Lunges: 3x12 per láb","video":"https://www.youtube.com/embed/VIDEO20"},
+            {"name":"Calf Raises: 3×15","video":"https://www.youtube.com/embed/VIDEO21"}
+          ],
+          "core": [
+            {"name":"Side Plank: 3×30 mp / oldal","video":"https://www.youtube.com/embed/VIDEO22"},
+            {"name":"Hanging Knee Raise vagy Knee Tucks: 3×12","video":"https://www.youtube.com/embed/VIDEO23"}
+          ]
+        },
+        "3": {
+          "title": "Szerda – Mobilitás / Recovery",
+          "goal": "regeneráció, core, mozgékonyság",
+          "warmup": [
+            {"name":"20 perc könnyű cardio (bicikli, elliptikus)","video":"https://www.youtube.com/embed/VIDEO24"}
+          ],
+          "strength": [
+            {"name":"Foam rolling 10–15 perc","video":"https://www.youtube.com/embed/VIDEO25"},
+            {"name":"Stretching / jóga 15 perc","video":"https://www.youtube.com/embed/VIDEO26"}
+          ],
+          "core": [
+            {"name":"Pallof Press 3×12","video":"https://www.youtube.com/embed/VIDEO27"},
+            {"name":"Russian Twist 3×20","video":"https://www.youtube.com/embed/VIDEO28"}
+          ]
+        },
+        "4": {
+          "title": "Csütörtök – Full Body / Speed",
+          "goal": "gyors erő + koordináció",
+          "strength": [
+            {"name":"Deadlift: 3×5","video":"https://www.youtube.com/embed/VIDEO29"},
+            {"name":"Push Press: 3×6","video":"https://www.youtube.com/embed/VIDEO30"}
+          ],
+          "plyo": [
+            {"name":"Medicine Ball Slams: 3×10","video":"https://www.youtube.com/embed/VIDEO31"},
+            {"name":"Lateral Bounds: 3×10/oldal","video":"https://www.youtube.com/embed/VIDEO32"},
+            {"name":"Agility Ladder / Cone Drills: 15 perc","video":"https://www.youtube.com/embed/VIDEO33"}
+          ],
+          "core": [
+            {"name":"Hanging Knee Raise + Pallof Press: 3×12","video":"https://www.youtube.com/embed/VIDEO34"}
+          ]
+        },
+        "5": {
+          "title": "Péntek – Lower Body / Strength & Core",
+          "goal": "erős alsótest + atlétikus core",
+          "strength": [
+            {"name":"Squats (barbell): 3×5–6","video":"https://www.youtube.com/embed/VIDEO35"},
+            {"name":"Romanian Deadlift: 3×6","video":"https://www.youtube.com/embed/VIDEO36"},
+            {"name":"Bulgarian Split Squat: 3×8/ láb","video":"https://www.youtube.com/embed/VIDEO37"}
+          ],
+          "plyo": [
+            {"name":"Broad Jump: 3×8","video":"https://www.youtube.com/embed/VIDEO38"},
+            {"name":"Glute Bridge / Hip Thrust: 3×12","video":"https://www.youtube.com/embed/VIDEO39"},
+            {"name":"Calf Raises: 3×15","video":"https://www.youtube.com/embed/VIDEO40"}
+          ],
+          "core": [
+            {"name":"Plank 3×45s","video":"https://www.youtube.com/embed/VIDEO41"},
+            {"name":"Side Plank 3×30s","video":"https://www.youtube.com/embed/VIDEO42"},
+            {"name":"Russian Twist 3×20","video":"https://www.youtube.com/embed/VIDEO43"}
+          ]
+        },
+        "6": {
+          "title": "Szombat – Speed / Agility / Conditioning",
+          "goal": "labdás mozgás, gyors irányváltás",
+          "drills": [
+            {"name":"Lateral Quick Steps: 3×10/oldal","video":"https://www.youtube.com/embed/VIDEO44"},
+            {"name":"Bounding / Skipping helyben vagy hosszú szőnyegen: 3×20 m","video":"https://www.youtube.com/embed/VIDEO45"},
+            {"name":"Agility Ladder / Cone Drills: 15–20 perc","video":"https://www.youtube.com/embed/VIDEO46"},
+            {"name":"Medicine Ball Rotational Throw: 3×10/oldal","video":"https://www.youtube.com/embed/VIDEO47"},
+            {"name":"Mountain Climbers: 3×30 mp","video":"https://www.youtube.com/embed/VIDEO48"},
+            {"name":"Pallof Press: 3×10/oldal","video":"https://www.youtube.com/embed/VIDEO49"}
+          ],
+          "cooldown": [
+            {"name":"Levezetés / mobilizáció: 5–10 perc","video":"https://www.youtube.com/embed/VIDEO50"}
+          ]
+        },
+        "7": {
+          "title": "Vasárnap – Pihenő",
+          "goal": "Alvás, séta, könnyű mobilitás",
+          "warmup": [], "strength": [], "assistance": [], "plyo": [], "drills": [], "core": [], "cooldown": []
+        }
+      }
+    }
   }
 }

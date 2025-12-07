@@ -79,7 +79,8 @@ a {
 .hero {
   position: relative;
   height: 500px;
-  background-image: url('./header_kep.webp');
+  background-image: url('./IMG/header_kep.webp');
+  
   background-size: cover;
   background-position: center;
   display: flex;
@@ -89,10 +90,14 @@ a {
 }
 
 .hero-overlay {
-  position: absolute; top:0; left:0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
+  position: absolute; 
+  top:0; 
+  left:0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.8);
 }
+
 
 .hero-content {
   position: relative;

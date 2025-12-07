@@ -132,6 +132,35 @@ a {
   background: rgba(212,160,23,0.3);
 }
 
+ /* Collapsible kategoriák */
+.category-header {
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #f1c40f;
+}
+
+.category-list {
+  list-style: none;
+  padding-left: 15px;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.category-list li {
+  background: rgba(255,255,255,0.05);
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-list li:hover {
+  background: rgba(212,160,23,0.3);
+}
+
 /* ---------- PROGRESS BAR ---------- */
 .progress {
   height: 15px;
