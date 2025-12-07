@@ -75,6 +75,49 @@ a {
   height: 25px;
 }
 
+/* ---------- ALAP DARK THEME ---------- */
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --highlight-color: #d4a017;
+  --card-bg: rgba(30,30,30,0.5);
+  --exercise-bg: rgba(255,255,255,0.05);
+  --exercise-hover: rgba(212,160,23,0.2);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+a { color: inherit; transition: color 0.3s; }
+
+.navbar { background: #111; transition: background 0.5s; }
+.navbar-brand { color: var(--highlight-color); transition: color 0.5s; }
+.nav-link.active, .nav-link:hover { color: var(--highlight-color); }
+
+.day-card { background: var(--card-bg); transition: all 0.5s; }
+.exercise-item { background: var(--exercise-bg); transition: all 0.3s; }
+.exercise-item:hover { background: var(--exercise-hover); }
+
+/* ---------- LIGHT THEME ---------- */
+body.light-theme {
+  --bg-color: #fdfdfd;
+  --text-color: #121212;
+  --highlight-color: #d4a017;
+  --card-bg: rgba(250,250,250,0.85);
+  --exercise-bg: rgba(0,0,0,0.05);
+  --exercise-hover: rgba(212,160,23,0.2);
+}
+
+body.light-theme .navbar { background: #fff; }
+body.light-theme .navbar-brand, 
+body.light-theme .nav-link.active, 
+body.light-theme .nav-link:hover { color: var(--highlight-color); }
+
+
+
 /* ---------- HERO ---------- */
 .hero {
   position: relative;
