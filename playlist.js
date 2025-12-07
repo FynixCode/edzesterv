@@ -15,12 +15,15 @@ loginBtn.addEventListener('click', () => {
 // Token kinyerése URL-ből
 function getAccessToken() {
   const hash = window.location.hash;
+  console.log("URL hash:", hash);
   if (!hash) return null;
   const params = new URLSearchParams(hash.substring(1));
   return params.get('access_token');
 }
 
 const token = getAccessToken();
+console.log("Access token:", token);
+
 if (token) {
   loginBtn.style.display = 'none';
   fetchPlaylists(token);
